@@ -8,6 +8,5 @@
 
 # Select file to open
 book=$(ls ~/books | dmenu -i -p "Choose book:")
-
 # Send it to zathura and leave it runing with no terminal
-nohup zathura ~/books/$book & exit
+nohup zathura ~/books/"$book" & exit
